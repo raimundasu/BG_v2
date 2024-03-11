@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: $desktopWidth;
+  font-family: Montserrat;
+}
+
+nav {
+  max-width: $desktopWidth;
+  background-color: $nav-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.meniuAll {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $text-white-color;
+  opacity: 0.69;
+  position: relative;
+}
+
+.meniu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  background: rgb(16, 147, 141);
+  transition: width 0.3s ease-in, height 0.3s step-end;
+}
+.meniu:hover::after {
+  // translate: 10%;
+  width: 100%;
+  height: 10%;
+  background: rgb(147, 16, 75);
+}
+
+i {
+  color: $text-white2-color;
+  cursor: pointer;
+}
+
+#burger {
+  display: none;
+}
+
+.content {
+  margin-top: 80px;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  #burger {
+    display: block;
+    transition: 0.4s;
+  }
+
+  .rotate {
+    transform: rotate(-90deg);
+  }
+
+  .meniuAll {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background: $nav-bg-color;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+    transform: translateY(calc(-100% - 60px));
+    transition: 0.4s;
+    gap: 0;
+  }
+
+  .meniuAll a {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+  .content-mobile {
+    margin-top: 210px;
+  }
+
+  .show-nav {
+    transform: translateY(0);
+  }
+}
