@@ -18,98 +18,247 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <img
-        class="logo"
-        src="app/images/Company_Logo.svg"
-        alt="Cheshire County Hygiene Service Logo"
-      />
-      <div class="meniuAll">
-        <a class="meniu" href="#features">Features</a>
-        <a class="meniu" href="#about">About</a>
-        <a class="meniu" href="#pricing">Pricing</a>
-        <a class="meniu" href="#reviews">Reviews</a>
-        <a class="meniu" href="#contac">Contact</a>
-      </div>
-      <i id="burger" class="fa-solid fa-bars"></i>
-    </nav>
-    <div class="content">
-      <section id="features" class="container container-1">
-        <div class="text">
-          <img
-            class="text"
-            src="app/images/Company_Logo.svg"
-            alt="Cheshire County Hygiene Service Logo"
-          />
-          <h1 class="text">
-            Explained propriety <br />of out perpetual to you
-          </h1>
-          <hr />
-          <p class="text">
-            Insipidity the sufficient discretion imprudence resolution sir him
-            decisively. Proceed how any engaged visitor. Explained propriety of
-            out perpetuel his you. Feel sold off nay rose met you. We so
-            entreaties cultivated astonished is.
-          </p>
-          <button type="submit" class="text">Download</button>
+    <main>
+      <nav>
+        <img
+          class="logo"
+          src="app/images/Company_Logo.svg"
+          alt="Cheshire County Hygiene Service Logo"
+        />
+        <div class="meniuAll">
+          <a class="meniu" href="#features">Features</a>
+          <a class="meniu" href="#about">About</a>
+          <a class="meniu" href="#pricing">Pricing</a>
+          <a class="meniu" href="#reviews">Reviews</a>
+          <a class="meniu" href="#contac">Contact</a>
+        </div>
+        <i id="burger" class="fa-solid fa-bars"></i>
+      </nav>
+      <div class="content">
+        <section id="features" class="container container-1">
+          <div class="text">
+            <img
+              class="text"
+              src="app/images/Company_Logo.svg"
+              alt="Cheshire County Hygiene Service Logo"
+            />
+            <h1 class="text">
+              Explained propriety <br />of out perpetual to you
+            </h1>
+            <hr />
+            <p class="text">
+              Insipidity the sufficient discretion imprudence resolution sir him
+              decisively. Proceed how any engaged visitor. Explained propriety
+              of out perpetuel his you. Feel sold off nay rose met you. We so
+              entreaties cultivated astonished is.
+            </p>
+            <button type="submit" class="text">Download</button>
+          </div>
+
+          <form action="submit.html">
+            <div class="form-freeTrial">
+              <h2 id="f1">Try Your <span>Free</span> Trial Today</h2>
+              <h3>Your details</h3>
+              <input
+                class="form1"
+                type="text"
+                name="firstName"
+                placeholder="First name"
+                autocomplete="off"
+              />
+
+              <input
+                class="form1"
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                autocomplete="off"
+              />
+              <input
+                class="form1"
+                type="number"
+                name="phoneNumber"
+                placeholder="Phone number"
+                autocomplete="off"
+                onfocus="this.type ='phoneNumber'"
+              />
+
+              <h3>Type of subscription</h3>
+              <p class="radioButton">
+                <input
+                  class="form1"
+                  type="radio"
+                  id="monthly"
+                  name="type"
+                  value="Monthly"
+                  checked
+                />
+                <label for="monthly"> Monthly</label>
+                <input
+                  class="form1"
+                  type="radio"
+                  id="yearly"
+                  name="type"
+                  value="Yearly"
+                />
+                <label for="yearly"> Yearly</label>
+              </p>
+              <input id="getStarted" type="submit" value="Get started" />
+            </div>
+          </form>
+        </section>
+
+        <div class="socialMedia">
+          <div class="text1">
+            <h3>Social Media</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              inventore, accusantium blanditiis tenetur numquam quos?
+            </p>
+          </div>
+
+          <div class="icons1">
+            <a href="#"
+              >Facebook
+              <img src="/app/images/facebook-logo.svg" alt="facebook" />
+            </a>
+
+            <a href="#"
+              >Instagram
+              <img src="/app/images/instagram-logo.svg" alt="instagram" />
+            </a>
+
+            <a href="#"
+              >Twitter <img src="/app/images/twitter.svg" alt="twitter" />
+            </a>
+
+            <a href="#"
+              >Pinterest <img src="/app/images/pinterest.svg" alt="pinterest" />
+            </a>
+
+            <a href="#"
+              >Wireless
+              <img src="/app/images/wireless_signal_icon2.png" alt="wireless" />
+            </a>
+
+            <a href=""></a>
+          </div>
         </div>
 
-        <form action="submit.html">
-          <div class="form-freeTrial">
-            <h2 id="f1">Try Your <span>Free</span> Trial Today</h2>
-            <h3>Your details</h3>
-            <input
-              class="form1"
-              type="text"
-              name="firstName"
-              placeholder="First name"
-              autocomplete="off"
-            />
-
-            <input
-              class="form1"
-              type="text"
-              name="lastName"
-              placeholder="Last name"
-              autocomplete="off"
-            />
-            <input
-              class="form1"
-              type="number"
-              name="phoneNumber"
-              placeholder="Phone number"
-              autocomplete="off"
-              onfocus="this.type ='phoneNumber'"
-            />
-
-            <h3>Type of subscription</h3>
-            <p class="radioButton">
-              <input
-                class="form1"
-                type="radio"
-                id="monthly"
-                name="type"
-                value="Monthly"
-                checked
-              />
-              <label for="monthly"> Monthly</label>
-              <input
-                class="form1"
-                type="radio"
-                id="yearly"
-                name="type"
-                value="Yearly"
-              />
-              <label for="yearly"> Yearly</label>
-            </p>
-            <input id="getStarted" type="submit" value="Get started" />
+        <section id="about" class="container container-2">
+          <div class="button">
+            <button onclick="showTab(event,'register')">Register</button>
+            <button onclick="showTab(event,'apply')">Apply</button>
+            <button onclick="showTab(event,'receive')">Receive</button>
           </div>
-        </form>
-      </section>
-      <section id="about" class="container container-2"></section>
-      <section id="pricing" class="container container-3"></section>
-      <section id="reviews" class="container container-4"></section>
-      <section id="contact" class="container container-5"></section>
-    </div>
+
+          <div class="tabsAll">
+            <div id="register" class="tab">
+              <p>
+                Tabs with soft transitioning effect. Explained propriety of
+                outperpetual his you.
+              </p>
+            </div>
+
+            <div id="apply" class="tab">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis explicabo tempora fugiat cumque recusandae reiciendis
+                architecto repudiandae id odit veniam rerum sed alias, quis
+                omnis rem nemo dolores quos facilis?
+              </p>
+            </div>
+
+            <div id="receive" class="tab">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                exercitationem officia qui possimus, rerum suscipit?
+              </p>
+            </div>
+            <div class="picture3">
+              <img src="/app/images/cabbage.png" alt="cabbage" />
+              <img src="/app/images/veg-art.png" alt="vegetable art" />
+              <img src="/app/images/stairs.png" alt="stairs" />
+            </div>
+          </div>
+        </section>
+
+        <div class="black">
+          <div id="logo3">
+            <img src="/app/images/Company_Logo.svg" alt="Logo" />
+          </div>
+          <div class="textBlack">
+            <h1>Erat tempor tempus erat malesuada</h1>
+            <hr />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+              impedit reiciendis maiores, error odio vitae itaque, veniam
+              facilis cum nostrum.
+            </p>
+            <div class="textBlack1">
+              <img src="/app/images/black1.png" alt="icon" />
+              <h6>Title</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                eos optio facere dolore aliquid corporis quisquam
+              </p>
+            </div>
+            <div class="textBlack1">
+              <img src="/app/images/black2.png" alt="icon" />
+              <h6>Title</h6>
+              <p>
+                Cumque impedit asperiores quisquam at eos recusandae architecto
+                reprehenderit quasi minima culpa inventore sapiente distinctio
+                eligendi eius, soluta a magnam iusto possimus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="white">
+          <div class="white1">
+            <h1>why this is awesome</h1>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi,
+              vel!
+            </p>
+          </div>
+          <div class="white2">
+            <div class="white21">
+              <img src="/app/images/white1.png" alt="icon1" />
+              <h3>Thoughtful Design</h3>
+              <p>
+                Endeavor bachelor but add eat pleasure doubtful sociable. Age
+                forming covered you entered the examine.
+              </p>
+            </div>
+
+            <div class="white22">
+              <img src="/app/images/white2.png" alt="icon1" />
+              <h3>Well Crafted</h3>
+              <p>
+                Neat own nor she said see walk. And charm add green you these.
+                Sang busy in this drew ye fine. At greater prepare musical so
+                attacks as on distant.
+              </p>
+            </div>
+
+            <div class="white23">
+              <img src="/app/images/white3.png" alt="icon1" />
+              <h3>Easy to Customize</h3>
+              <p>
+                Death there mirth way the noisy merit. Piqued shy spring nor six
+                though mutual living ask extent.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section id="pricing" class="container container-3"></section>
+        <section id="reviews" class="container container-4"></section>
+        <section id="contact" class="container container-5"></section>
+      </div>
+    </main>
   </body>
 </html>
