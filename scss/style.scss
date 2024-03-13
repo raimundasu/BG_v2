@@ -25,3 +25,41 @@
     color: $text-white-color;
   }
 }
+
+.blue21 .white3 {
+  text-transform: uppercase;
+}
+
+.customer2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.customer211 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: $bg-blue;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 16px;
+    color: $text-white-color;
+  }
+}
+.customer212 {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.pink {
+  background: $text-orange-color;
+  .footer {
+    background: $nav-bg-color;
+  }
+}
