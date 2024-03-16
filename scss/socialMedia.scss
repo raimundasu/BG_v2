@@ -1,0 +1,22 @@
+.socialMedia {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10%;
+  @include displayRowBW;
+
+  .text1 {
+    width: 40%;
+
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .icons1 {
+    width: 50%;
+    @include displayRowBW;
+  }
+}

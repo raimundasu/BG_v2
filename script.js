@@ -20,20 +20,38 @@ for (const a of anchors) {
     content.classList.remove("content-mobile");
   });
 }
-//try your free trial today form control
-// document.getElementById("getStarted").disabled = true;
 
-// const getStarted = document.querySelector("#getStarted");
-// const fName = document.querySelectorAll(".form1");
-// getStarted.addEventListener("click", function () {
-//   for (let i = 0; i < fName.length; i++) {
-//     if (fName[i].value === " ") {
-//       alert("Please fill all form");
-//       document.getElementById("getStarted").disabled = true;
-//     } else {
-//       document.getElementById("getStarted").disabled = false;
-//     }
-//   }
-// });
+// !Vegetables
 
-// console.log(getStarted);
+const tabs = document.querySelectorAll(".tab");
+const buttons = document.querySelectorAll("button");
+const pictures = document.querySelectorAll(".picture");
+
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].style.display = "none";
+}
+// document.getElementById(register).style.display = "block";
+// document.getElementById(register).classList.add("active");
+
+console.log(pictures);
+``;
+function showTab(e, id) {
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = "none";
+    tabs[i].classList.remove("active");
+  }
+  // console.log(id);
+  document.getElementById(id).style.display = "block";
+
+  setTimeout(() => {
+    document.getElementById(id).classList.add("active");
+  }, 50);
+  // console.log(document.getElementById(id).classList);
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+    // pictures[i].classList.remove("active");
+  }
+
+  e.currentTarget.classList.add("active");
+}

@@ -1,4 +1,7 @@
 $nav-bg-color: #1c1c1c;
+$cont1-bg-grey: rgb(88, 88, 88);
+$cont2-mouseover-brown: #a37169;
+$cont2-selected-brownlight: #e27866;
 $text-white-color: #ffffff;
 $text-white2-color: #f5f5f5;
 $text-orange-color: #e27866;
@@ -6,3 +9,10 @@ $text-green-color: #41d395;
 $bg-blue: #6696e2;
 
 $desktopWidth: 1200px;
+
+@mixin displayRowBW {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

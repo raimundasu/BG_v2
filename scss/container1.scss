@@ -2,26 +2,17 @@
 .content {
   max-width: 100%;
 }
-section {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 10px auto;
-  // border-radius: 10px;
-  // transition: 0.4s;
-  border: solid 1px red;
-  // min-height: 600px;
-}
+// section {
+//   border: solid 1px red;
+// }
 .container-1 {
   background: url("../images/city10.png");
-  background-color: rgb(88, 88, 88);
+  background-color: $cont1-bg-grey;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   padding: 10% 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include displayRowBW;
 
   .text {
     width: 90%;

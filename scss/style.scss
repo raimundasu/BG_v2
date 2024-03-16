@@ -3,16 +3,8 @@
 @import "variables";
 @import "bodyAndNav";
 @import "container1";
-
-.container-2 {
-  background: url("../images/mountain20.png");
-  background-size: cover;
-  background-position: center;
-  padding: 10% 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+@import "socialMedia";
+@import "container2";
 
 .black {
   background: $nav-bg-color;
