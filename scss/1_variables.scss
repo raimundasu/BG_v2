@@ -7,6 +7,7 @@ $text-white2-color: #f5f5f5;
 $text-orange-color: #e27866;
 $text-green-color: #41d395;
 $bg-blue: #6696e2;
+$text-greyList-color: #86878b;
 
 $desktopWidth: 1200px;
 
@@ -14,5 +15,12 @@ $desktopWidth: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+@mixin displayColCent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }

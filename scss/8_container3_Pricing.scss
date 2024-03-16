@@ -1,0 +1,91 @@
+.container-3 {
+  width: 100%;
+  background-color: $bg-blue;
+
+  padding: 10% 10%;
+  @include displayRowBW;
+  flex-direction: column;
+
+  .blue1 {
+    @include displayColCent;
+    margin-bottom: 10%;
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $text-white-color;
+
+      // line-height: 50px;
+    }
+    hr {
+      width: 15%;
+      border: 2px $text-green-color solid;
+      margin: 3% 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 3% 0;
+      color: white;
+    }
+  }
+
+  .blue2 {
+    width: 100%;
+    @include displayRowBW;
+    align-items: flex-end;
+
+    .blue21,
+    .blue22,
+    .blue23 {
+      width: 100%;
+      @include displayColCent;
+      // padding: 0 10px;
+      margin: 0 2%;
+    }
+
+    .black3 {
+      width: 100%;
+      background: $nav-bg-color;
+      color: $text-white-color;
+      padding: 10px;
+
+      h5 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .currency {
+        font-size: 36px;
+        letter-spacing: -5px;
+      }
+      .bigNumber {
+        font-size: 94px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .green3 {
+      width: 100%;
+      min-height: 5px;
+      height: auto;
+      background: $text-green-color;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $text-white-color;
+      line-height: 40px;
+    }
+
+    .white3 {
+      width: 100%;
+      background: $text-white-color;
+      text-align: center;
+      line-height: 50px;
+      color: $text-greyList-color;
+      text-transform: uppercase;
+    }
+  }
+}
