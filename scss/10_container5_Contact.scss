@@ -1,0 +1,117 @@
+.container-5 {
+  .pink {
+    width: 100%;
+    background-color: $text-orange-color;
+    // padding: 10% 10% 0 10%;
+    @include displayColCent;
+    gap: 30px;
+
+    h1 {
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $text-white-color;
+      font-weight: 600;
+      margin: 10% auto 30px auto;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      color: $text-white-color;
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 35%;
+    }
+    .form-contactUs {
+      width: 100%;
+      background: $text-white-color;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      input {
+        margin: 10px 10%;
+
+        width: 80%;
+        line-height: 2rem;
+        font-size: 12px;
+        font-weight: 400;
+
+        border: none;
+        border-bottom: solid 2px $text-white2-color;
+        padding: 0px 10px;
+        // opacity: 0.63;
+        // color: $text-white2-color;
+      }
+      .form1 {
+        vertical-align: text-bottom;
+      }
+
+      input:hover {
+        cursor: pointer;
+      }
+
+      .radioButton {
+        margin: 10px 10%;
+        text-align: left;
+        margin-bottom: 10%;
+
+        label {
+          font-size: 12px;
+          color: $nav-bg-color;
+          opacity: 0.5;
+        }
+      }
+
+      input[type="radio"] {
+        display: inline;
+        margin: 10px;
+        vertical-align: middle;
+        width: 10px;
+        // accent-color: rgb(65, 211, 149);
+      }
+
+      input[type="submit"] {
+        background: $text-green-color;
+        margin: 0 auto 50px auto;
+
+        color: $text-white-color;
+        font-size: 15px;
+        line-height: 50px;
+        width: 40%;
+        border-radius: 10px;
+      }
+    }
+
+    .footer {
+      @include displayRowBW;
+      padding: 0;
+      width: 100%;
+      height: 100px;
+      .icons1 {
+        @include displayRowBW;
+        width: 50%;
+
+        padding: 0 0 0 10%;
+
+        img {
+          height: 20px;
+        }
+      }
+
+      .text2 {
+        width: 30%;
+        color: $text-white-color;
+        font-size: 18px;
+        h3 {
+          font-weight: 400;
+          padding-left: 10%;
+        }
+      }
+    }
+  }
+}
