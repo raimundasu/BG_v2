@@ -87,8 +87,16 @@
       }
     }
 
+    // .pink {
+    //   background: $text-orange-color;
+    //   .footer {
+    //     background: $nav-bg-color;
+    //   }
+    // }
+
     .footer {
       @include displayRowBW;
+      background: $nav-bg-color;
       padding: 0;
       width: 100%;
       height: 100px;

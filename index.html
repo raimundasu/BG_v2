@@ -14,7 +14,19 @@
     />
 
     <link rel="icon" type="image/x-icon" href="app/images/gulp.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
     <link rel="stylesheet" href="app/css/style.css" />
+
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -332,12 +344,137 @@
             </div>
           </div>
         </section>
+
         <section id="reviews" class="container container-4">
           <div class="customer1">
             <h1>what our customers are saying</h1>
             <hr />
           </div>
-          <div class="customer2">
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Tempora voluptatem earum iusto maxime! Repellendus,
+                      possimus.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="Jeremy" />
+                    <div class="customer213">
+                      <h1>Jeremy H.</h1>
+                      <h6>Manager</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      Consectetur adipisicing elit. Tempora voluptatem earum
+                      iusto maxime! Repellendus, possimus.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="John S" />
+                    <div class="customer213">
+                      <h1>John S.</h1>
+                      <h6>Freelancer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      Happiness she ham but instantly put departure propriety.
+                      She amiable all without say spirits shy clothes morning.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="Susan" />
+                    <div class="customer213">
+                      <h1>Susan W.</h1>
+                      <h6>Photographer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      General enquire picture letters garrets on offices of no
+                      on. Say one hearing between excited evening all inhabit
+                      thought you.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="Martin B." />
+                    <div class="customer213">
+                      <h1>Martin B.</h1>
+                      <h6>Dancer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      Far quitting dwelling graceful the likewise received
+                      building. An fact so to that show am shed sold cold.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="Cillian M." />
+                    <div class="customer213">
+                      <h1>Cillian M.</h1>
+                      <h6>Baker</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer21">
+                  <div class="customer211">
+                    <p>
+                      Lorem ipsum is the most common form of "Greeking". However
+                      more and more people are sick and tired of using the same
+                      sample text over and over again.
+                    </p>
+                  </div>
+                  <div class="customer212">
+                    <img src="app/images/avatar_2_u231.png" alt="Kate M." />
+                    <div class="customer213">
+                      <h1>Kate M.</h1>
+                      <h6>Princess</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div>
+          </div> -->
+
+            <!-- <div class="customer2">
             <div class="customer21">
               <div class="customer211">
                 <p>
@@ -353,8 +490,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="customer22">
+            <div class="customer21">
               <div class="customer211">
                 <p>
                   Consectetur adipisicing elit. Tempora voluptatem earum iusto
@@ -369,7 +505,7 @@
                 </div>
               </div>
             </div>
-            <div class="customer23">
+            <div class="customer21">
               <div class="customer211">
                 <p>
                   Happiness she ham but instantly put departure propriety. She
@@ -384,8 +520,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="customer24">
+            <div class="customer21">
               <div class="customer211">
                 <p>
                   General enquire picture letters garrets on offices of no on.
@@ -401,8 +536,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="customer25">
+            <div class="customer21">
               <div class="customer211">
                 <p>
                   Far quitting dwelling graceful the likewise received building.
@@ -417,7 +551,7 @@
                 </div>
               </div>
             </div>
-            <div class="customer26">
+            <div class="customer21">
               <div class="customer211">
                 <p>
                   Lorem ipsum is the most common form of "Greeking". However
@@ -433,6 +567,7 @@
                 </div>
               </div>
             </div>
+          </div> -->
           </div>
         </section>
         <section id="contact" class="container container-5">

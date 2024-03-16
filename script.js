@@ -5,7 +5,7 @@ const menius = document.querySelector(".meniuAll");
 const anchors = menius.querySelectorAll("a");
 const content = document.querySelector(".content");
 
-console.log("content");
+// console.log("content");
 
 burger.addEventListener("click", function () {
   burger.classList.toggle("rotate");
@@ -33,8 +33,8 @@ for (let i = 0; i < tabs.length; i++) {
 // document.getElementById(register).style.display = "block";
 // document.getElementById(register).classList.add("active");
 
-console.log(pictures);
-``;
+// console.log(pictures);
+
 function showTab(e, id) {
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].style.display = "none";
@@ -55,3 +55,53 @@ function showTab(e, id) {
 
   e.currentTarget.classList.add("active");
 }
+
+//!Swipper
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  spaceBetween: 50,
+
+  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      // spaceBetween: 20,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+    },
+
+    800: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      allowSlideNext: true,
+      // spaceBetween: 20,
+      allowSlidePrev: true,
+    },
+  },
+
+  autoplay: {
+    delay: 2000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+});
