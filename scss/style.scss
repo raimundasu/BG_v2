@@ -1,22 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import "variables";
-@import "bodyAndNav";
-@import "container1";
-@import "socialMedia";
-@import "container2";
-
-.black {
-  background: $nav-bg-color;
-  padding: 10% 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .textBlack {
-    color: $text-white-color;
-  }
-}
+@import "1_variables";
+@import "2_bodyAndNav";
+@import "3_container1";
+@import "4_socialMedia";
+@import "5_container2";
+@import "6_textBlack";
 
 .blue21 .white3 {
   text-transform: uppercase;
