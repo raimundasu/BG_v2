@@ -39,7 +39,7 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 //rodo visą tekstą
-tab.style.display = "block";
+//tabs[0].style.display = "block";
 
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].style.display = "none";
