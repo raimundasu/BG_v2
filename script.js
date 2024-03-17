@@ -24,33 +24,42 @@ for (const a of anchors) {
 // !Vegetables
 
 const tabs = document.querySelectorAll(".tab");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".button");
 const pictures = document.querySelectorAll(".picture");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    pictures[i].classList.remove("active2");
+  });
+}
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    pictures[i].classList.add("active2");
+  });
+}
+//rodo visą tekstą
+tab.style.display = "block";
 
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].style.display = "none";
 }
-// document.getElementById(register).style.display = "block";
-// document.getElementById(register).classList.add("active");
-
-// console.log(pictures);
 
 function showTab(e, id) {
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].style.display = "none";
     tabs[i].classList.remove("active");
   }
-  // console.log(id);
+
   document.getElementById(id).style.display = "block";
 
   setTimeout(() => {
     document.getElementById(id).classList.add("active");
   }, 50);
-  // console.log(document.getElementById(id).classList);
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].classList.remove("active");
-    // pictures[i].classList.remove("active");
+    pictures[i].classList.remove("active2");
   }
 
   e.currentTarget.classList.add("active");

@@ -1,0 +1,187 @@
+@media (max-width: $mobileWidth) {
+  #burger {
+    display: block;
+    transition: 0.4s;
+  }
+
+  .rotate {
+    transform: rotate(-90deg);
+  }
+
+  .meniuAll {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background: $nav-bg-color;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+    transform: translateY(calc(-100% - 60px));
+    transition: 0.4s;
+    gap: 0;
+  }
+
+  .meniuAll a {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+  .content-mobile {
+    margin-top: 200px;
+  }
+
+  .show-nav {
+    transform: translateY(0);
+  }
+
+  .container-1 {
+    @include displayColCent;
+
+    justify-content: start;
+    align-items: start;
+
+    form {
+      margin-top: 150px;
+      // width: 50%;
+    }
+  }
+
+  .text1 {
+    width: 50%;
+
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .icons1 {
+    width: 40%;
+    img {
+      height: 20px;
+    }
+  }
+
+  .container-2 {
+    @include displayColCent;
+
+    .buttonALL {
+      width: 80%;
+      @include displayRowBW;
+    }
+
+    .tabsAll {
+      //   margin: 50px;
+      width: 80%;
+      padding: 20px;
+    }
+    .picture3 {
+      width: 80%;
+    }
+  }
+
+  .black {
+    @include displayColCent;
+
+    .logo3 {
+      width: 50%;
+    }
+    .textBlack {
+      width: 100%;
+    }
+
+    .textBlack0 {
+      h1 {
+        text-align: center;
+      }
+      hr {
+        width: 100%;
+      }
+    }
+  }
+
+  .white {
+    .white1 {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .white2 {
+      @include displayColCent;
+      align-items: flex-start;
+
+      .white21,
+      .white22,
+      .white23 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+
+        h3 {
+          font-size: 20px;
+          margin: 0 15px;
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .container-3 {
+    .blue1 {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .blue2 {
+      width: 70%;
+      @include displayColCent;
+      align-items: center;
+
+      .white3 {
+        line-height: 30px;
+
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .container-5 {
+    .pink {
+      h1 {
+        font-size: 24px;
+
+        margin: 5% auto 0px auto;
+      }
+
+      form {
+        width: 50%;
+      }
+
+      .footer {
+        .icons1 {
+          width: 50%;
+
+          img {
+            height: 15px;
+          }
+        }
+
+        .text2 {
+          width: 50%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

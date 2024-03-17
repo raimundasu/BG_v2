@@ -3,9 +3,7 @@
   background-color: $bg-blue;
 
   padding: 10% 10%;
-  @include displayRowBW;
-  flex-direction: column;
-
+  @include displayColCent;
   .blue1 {
     @include displayColCent;
     margin-bottom: 10%;

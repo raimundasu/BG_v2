@@ -10,3 +10,15 @@
 @import "8_container3_Pricing";
 @import "9_container4_Customer.scss";
 @import "10_container5_Contact.scss";
+@import "11_mobile.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: $desktopWidth;
+  font-family: Montserrat;
+}

@@ -1,11 +1,12 @@
 .container-4 {
   width: 100%;
-  //   min-height: 500px;
+  // height: 100vh;
   margin: 10% auto;
   padding: 0 10%;
 }
 
 .customer1 {
+  margin-bottom: 70px;
   h1 {
     font-size: 36px;
     text-transform: uppercase;
@@ -33,23 +34,23 @@
     padding: 15px;
     margin-bottom: 20px;
     position: relative;
-
-    .customer211::before {
-      content: "Remember";
-      width: 200px;
-      height: 200px;
-      background: black;
-      border: 2px red solid;
-      position: absolute;
-      top: 100px;
-      left: 100px;
-    }
-
-    p {
-      font-size: 16px;
-      color: $text-white-color;
-    }
   }
+  .customer211::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    border: 15px solid transparent;
+    border-right-color: $bg-blue;
+    rotate: -90deg;
+  }
+
+  p {
+    font-size: 16px;
+    color: black;
+    // color: $text-white-color;
+  }
+
   .customer212 {
     @include displayRowBW;
     //   display: flex;
@@ -74,12 +75,22 @@
   max-width: 100%;
   height: auto;
 
-  //   padding: 10%;
+  .swiper-pagination-bullet {
+    background: $text-orange-color;
+    width: 10px;
+    height: 10px;
+    transition: 0.3s;
+  }
 }
 
-// .swiper-pagination {
-//   margin-bottom: 50px;
-// }
+.swiper-pagination-bullets {
+  position: relative;
+  margin-top: 30px;
+}
+
+.swiper-pagination {
+  margin-bottom: -0px;
+}
 /* Swiper changes */
 
 // body {
@@ -96,18 +107,6 @@
 
 // .plan {
 //   width: 250px;
-// }
-
-// .swiper-pagination-bullets {
-//   position: relative;
-//   margin-top: 20px;
-// }
-
-// .swiper-pagination-bullet {
-//   background: gold;
-//   width: 20px;
-//   height: 20px;
-//   transition: 0.3s;
 // }
 
 // .swiper-pagination-bullet-active {
