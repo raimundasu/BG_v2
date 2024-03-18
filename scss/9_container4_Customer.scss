@@ -1,8 +1,11 @@
 .container-4 {
+  @include displayColCent;
+  justify-content: space-around;
+  height: 100vh;
   width: 100%;
-  //height: 100vh;
-  margin: 10% auto;
-  padding: 0 10%;
+
+  margin-top: 10%;
+  padding: 10% 10%;
 }
 
 .customer1 {

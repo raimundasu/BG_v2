@@ -42,7 +42,7 @@
 
     justify-content: start;
     align-items: start;
-
+    height: auto;
     form {
       margin-top: 150px;
       // width: 50%;
@@ -137,6 +137,7 @@
   }
 
   .container-3 {
+    height: auto;
     .blue1 {
       h1 {
         font-size: 24px;
@@ -155,9 +156,13 @@
       }
     }
   }
+  .container-4 {
+    height: auto;
+  }
 
   .container-5 {
     .pink {
+      height: auto;
       h1 {
         font-size: 24px;
 

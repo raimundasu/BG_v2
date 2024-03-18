@@ -1,4 +1,5 @@
 .container-2 {
+  // height: 100vh;
   background: url("../images/mountain20.png");
   background-color: $cont2-mouseover-brown;
   background-blend-mode: overlay;
@@ -62,7 +63,7 @@
 
   .picture3 {
     width: 40%;
-    height: 400px;
+    // height: 400px;
 
     display: flex;
     flex-direction: column;
@@ -71,9 +72,11 @@
 
     .picture31 {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include displayRowBW;
+
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
       gap: 10px;
     }
 
@@ -83,6 +86,8 @@
       background: url("../images/cabbage.png");
       background-size: cover;
       background-position: center;
+      background-size: auto 230px;
+      background-repeat: no-repeat;
     }
 
     #apply {
@@ -91,6 +96,8 @@
       background: url("../images/veg-art.png");
       background-size: cover;
       background-position: center;
+      background-size: auto 230px;
+      background-repeat: no-repeat;
     }
     #receive {
       width: 100%;
@@ -98,6 +105,8 @@
       background: url("../images/stairs.png");
       background-size: cover;
       background-position: center;
+      background-size: auto 230px;
+      background-repeat: no-repeat;
     }
     #register.active2 {
       background-color: $text-orange-color;

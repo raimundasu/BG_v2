@@ -27,11 +27,11 @@ const tabs = document.querySelectorAll(".tab");
 const buttons = document.querySelectorAll(".button");
 const pictures = document.querySelectorAll(".picture");
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function () {
-    pictures[i].classList.remove("active2");
-  });
-}
+// for (let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener("click", function () {
+//     pictures[i].classList.remove("active2");
+//   });
+// }
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
@@ -39,11 +39,12 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 //rodo visą tekstą
-//tabs[0].style.display = "block";
+tabs[0].style.display = "block";
 
-for (let i = 0; i < tabs.length; i++) {
-  tabs[i].style.display = "none";
-}
+//!jei norėtume visai nerodyti teksto
+// for (let i = 0; i < tabs.length; i++) {
+//   tabs[i].style.display = "none";
+// }
 
 function showTab(e, id) {
   for (let i = 0; i < tabs.length; i++) {
