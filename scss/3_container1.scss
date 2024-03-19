@@ -4,7 +4,6 @@
 }
 
 .container-1 {
-  height: 90vh;
   background: url("../images/city10.png");
   background-color: $cont1-bg-grey;
   background-blend-mode: overlay;
@@ -12,7 +11,7 @@
   background-position: center;
   padding: 10% 10%;
   @include displayRowBW;
-
+  // background-size: 100% 100%;
   .text {
     width: 90%;
     color: $text-white-color;

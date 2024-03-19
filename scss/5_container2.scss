@@ -1,5 +1,4 @@
 .container-2 {
-  // height: 100vh;
   background: url("../images/mountain20.png");
   background-color: $cont2-mouseover-brown;
   background-blend-mode: overlay;
@@ -8,7 +7,6 @@
   padding: 10% 10%;
   @include displayRowBW;
   width: 100%;
-  // min-height: 500px;
 
   .buttonALL {
     width: 10%;
