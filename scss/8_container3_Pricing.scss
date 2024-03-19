@@ -12,8 +12,6 @@
       font-weight: 600;
       text-transform: uppercase;
       color: $text-white-color;
-
-      // line-height: 50px;
     }
     hr {
       width: 15%;
@@ -38,7 +36,7 @@
     .blue23 {
       width: 100%;
       @include displayColCent;
-      // padding: 0 10px;
+
       margin: 0 2%;
     }
 
