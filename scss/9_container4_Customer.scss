@@ -50,14 +50,11 @@
   p {
     font-size: 16px;
     color: black;
-    // color: $text-white-color;
   }
 
   .customer212 {
     @include displayRowBW;
-    //   display: flex;
-    //   flex-direction: row;
-    //   align-items: center;
+
     gap: 10px;
 
     .customer213 {
@@ -93,47 +90,3 @@
 .swiper-pagination {
   margin-bottom: -0px;
 }
-/* Swiper changes */
-
-// body {
-//   min-height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .swiper {
-//   width: 600px;
-//   text-align: center;
-// }
-
-// .plan {
-//   width: 250px;
-// }
-
-// .swiper-pagination-bullet-active {
-//   width: 30px;
-//   height: 30px;
-// }
-
-// .swiper-button-prev,
-// .swiper-button-next {
-//   color: gold;
-//   transition: 0.3s;
-// }
-
-// .swiper-button-prev:hover,
-// .swiper-button-next:hover {
-//   transform: scale(1.25);
-// }
-
-// @media (min-width: 1000px) {
-//   .swiper {
-//     width: 1000px;
-//   }
-
-//   .swiper-wrapper {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
