@@ -5,8 +5,6 @@ const menius = document.querySelector(".meniuAll");
 const anchors = menius.querySelectorAll("a");
 const content = document.querySelector(".content");
 
-// console.log("content");
-
 burger.addEventListener("click", function () {
   burger.classList.toggle("rotate");
   menius.classList.toggle("show-nav");
@@ -26,12 +24,6 @@ for (const a of anchors) {
 const tabs = document.querySelectorAll(".tab");
 const buttons = document.querySelectorAll(".button");
 const pictures = document.querySelectorAll(".picture");
-
-// for (let i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener("click", function () {
-//     pictures[i].classList.remove("active2");
-//   });
-// }
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
@@ -78,19 +70,18 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
 
   breakpoints: {
-    400: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      // spaceBetween: 20,
+    600: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
       allowSlideNext: true,
       allowSlidePrev: true,
     },
 
-    800: {
+    762: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       allowSlideNext: true,
-      // spaceBetween: 20,
+
       allowSlidePrev: true,
     },
   },
@@ -109,9 +100,4 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });

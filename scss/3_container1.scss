@@ -11,7 +11,7 @@
   background-position: center;
   padding: 10% 10%;
   @include displayRowBW;
-  // background-size: 100% 100%;
+
   .text {
     width: 90%;
     color: $text-white-color;
@@ -83,7 +83,6 @@
       line-height: 1rem;
       margin: 1rem 0;
       padding: 0 10%;
-      // background: $text-white2-color;
     }
 
     input {
@@ -94,8 +93,6 @@
       border: none;
       border-bottom: solid 2px $text-white2-color;
       padding: 0 10px;
-      // opacity: 0.63;
-      // color: $text-white2-color;
     }
 
     input:hover {
@@ -116,7 +113,6 @@
       margin: 0;
       vertical-align: middle;
       width: 10px;
-      // accent-color: rgb(65, 211, 149);
     }
 
     input[type="submit"] {
